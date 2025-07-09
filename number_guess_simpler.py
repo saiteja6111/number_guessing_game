@@ -1,4 +1,12 @@
 import random
+print(
+'''
+ ▄▄ • ▄• ▄▌▄▄▄ ..▄▄ · .▄▄ ·     ▄▄▄▄▄ ▄ .▄▄▄▄ .     ▐ ▄ ▄• ▄▌• ▌ ▄ ·. ▄▄▄▄· ▄▄▄ .▄▄▄  
+▐█ ▀ ▪█▪██▌▀▄.▀·▐█ ▀. ▐█ ▀.     •██  ██▪▐█▀▄.▀·    •█▌▐██▪██▌·██ ▐███▪▐█ ▀█▪▀▄.▀·▀▄ █·
+▄█ ▀█▄█▌▐█▌▐▀▀▪▄▄▀▀▀█▄▄▀▀▀█▄     ▐█.▪██▀▐█▐▀▀▪▄    ▐█▐▐▌█▌▐█▌▐█ ▌▐▌▐█·▐█▀▀█▄▐▀▀▪▄▐▀▀▄ 
+▐█▄▪▐█▐█▄█▌▐█▄▄▌▐█▄▪▐█▐█▄▪▐█     ▐█▌·██▌▐▀▐█▄▄▌    ██▐█▌▐█▄█▌██ ██▌▐█▌██▄▪▐█▐█▄▄▌▐█•█▌
+·▀▀▀▀  ▀▀▀  ▀▀▀  ▀▀▀▀  ▀▀▀▀      ▀▀▀ ▀▀▀ · ▀▀▀     ▀▀ █▪ ▀▀▀ ▀▀  █▪▀▀▀·▀▀▀▀  ▀▀▀ .▀  ▀ 
+''')
 hard_level_turns = 5
 easy_level_turns = 10
 print("Welcome to the Number Guessing Game")
@@ -26,5 +34,3 @@ while guess != number:
     print(f"You have {turns} attempts remaoning to guess the number.")
     guess = int(input("Make a guess: "))
     turns = check(guess,number,turns)
-
-
